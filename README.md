@@ -4,11 +4,11 @@
 <h1>Goopy : The easy way to share your files </h1>
 
 
-📂Details
+📂Details : 
 
 <strong>Functional :</strong>
 - Upload a file (all)
-- Admin dashboard (show uploaded files)
+- Dashboard (show unsecured uploads)
 - Random sentence
 - Redesign (fronted)
 
@@ -39,4 +39,4 @@ QueenShare is an old abandoned project, it is not in the best shape, the code is
 This work is completely Open-Source, it's free. Feel free to give me feedback (positive or negative) is put a small ⭐️+1 star on this git.
 It supports multiple formats.
 
-📡 Contact me on the discord : <strong> Dremo#5683 </strong>
+📡 Contact me on the discord : <strong> Moshi#8946 </strong>
