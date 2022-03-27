@@ -1,0 +1,299 @@
+/* 
+
+Mediafire Download 
+Redesign by: @Lucasec.py
+
+*/
+
+:root {
+    --main-bg: white;
+    --destaque-color: #2c2f33;
+    --destaque-text-: #23272a;
+    --neutro-color: white;
+}
+
+body {
+    font-family: poppins; 
+    background-color: var(--main-bg);
+    background-color: #1b1e20;
+    background-size: cover;
+}
+
+a {text-decoration: none;}
+
+::selection {outline: none; background-color: #0363d1; color: var(--neutro-color);}
+
+p {margin: 0;}
+
+/* 
+
+Dashboard
+
+*/
+
+.container-fluid {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 95px;
+}
+
+.dashboard {
+    width: 80px;
+    height: 100%;
+    background-color: var(--destaque-color);
+    position: fixed;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.dashboard-item {padding: 25px 0;text-align: center; transition: all 0.5s;}
+
+.dashboard-item:hover {background-color: var(--destaque-text-);}
+
+.dashboard-item i {color: var(--neutro-color);}
+
+.top-menu, .bottom-menu {display: flex;flex-direction: column;}
+
+.bottom-menu {height: 100%;justify-content: flex-end;}
+
+/* 
+
+Header
+
+*/
+
+header {position: relative}
+
+.navbar
+
+.navbar-brand img {width: 20%; height: 20%;}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--destaque-color);
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+    
+}
+
+.search-section input {
+    background-color: transparent;
+    border: none;
+    margin: 0 5px 0 5px;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.search-section input::placeholder {color: white;}
+
+.search-section input:focus {outline: none;}
+
+.langs {width: 150px; height: auto; position: absolute; background-color: white; margin: 30px 0px 0px -95px; border-radius: 10px; display: none;}
+
+.langs p {font-size: 0.8rem;}
+
+.lang-section {padding: 0 15px; display: flex;}
+
+.lang-section img {width: 32px; margin-right: 5px;}
+
+.lang-section i {color: var(--destaque-text-); cursor: pointer;}
+
+.nav-menu {display: flex; align-items: center;}
+
+/* 
+
+Download
+
+*/
+
+.download-destaque {
+    color: var(--destaque-text-);
+    font-weight: bold;
+}
+
+.download-section {
+    background-color: var(--destaque-color);
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.download-background {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: var(--destaque-color);
+    justify-content: center;
+    -webkit-box-shadow: 3px 3px 23px 1px rgba(0,0,0,0.38); 
+    box-shadow: 3px 3px 23px 1px rgba(0,0,0,0.38);
+    padding: 20px;
+}
+
+.row {width: 100%;}
+
+.download-infos, .download-size {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--neutro-color);
+}
+
+.infos__author p {
+    font-size: 0.7rem;
+}
+
+.infos__name p {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.infos__arquivetype p {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.arquivetype {
+    font-weight: lighter;
+    font-size: 0.5rem;
+    padding: 3px;
+    background-color: var(--destaque-text-);
+    border-radius: 5px;
+}
+
+.download-area {
+    height: 150px;
+    margin-top: -40px;
+    background-color: var(--destaque-text-);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.download-logo img {
+    margin-top: -25px;
+    width: 38px;
+    height: 54px;
+}
+
+.download-certify {width: 20%; text-align: center;}
+/*.download-certify img {width: 20%;}*/
+
+.download-area button {
+    width: 100%;
+    border: none;
+    font-size: 0.8rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.infos__size {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.uploaded {text-align: right;}
+
+/* 
+
+middle section
+
+*/
+
+.middle-section {
+    height: 250px;
+    display: flex;
+}
+
+.adverseting {display: flex; align-items: center;}
+
+.adverseting img {max-width: 90%; border-radius: 25px;}
+
+.info-archivetype h3, p {font-size: 0.8rem;}
+
+.info-archivetype h3 {text-transform: uppercase; font-weight: bold;}
+
+/* 
+
+footer
+
+*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content h1 {font-size: 0.8rem; font-weight: bold; text-transform: uppercase; color: rgba(128, 128, 128, 0.44);}
+
+.footer-content a {font-size: 0.7rem; color: rgba(128, 128, 128, 0.507);}
+
+.footer-content a:hover {color: grey;}
+
+.footer-row {display: flex;}
+
+/* 
+
+media-querys
+
+*/
+
+@media only screen and (max-width: 768px) {
+
+    .dashboard {width: 50px;}
+
+    .container-fluid {padding-left: 65px;}
+
+    .download-section {height: auto; padding: 15px}
+
+    .download-background {padding: 25px 10px;}
+
+    .row {flex-direction: column;}
+
+    .row > div:nth-child(2) {margin: 80px 0;}
+
+    .download-certify img {display: none;}
+
+    .download-area {padding: 35px;}
+
+    .download-logo img {margin-top: -65px;}
+
+    .lang-section {flex-direction: column; align-items: center; justify-content: center;}
+
+    .lang-section img {margin: 0;}
+
+    .navbar-brand {text-align: center;}
+
+    .nav-menu {width: 100%; justify-content: center;}
+
+    .navbar {justify-content: center;}
+
+    .lang-section {display: none;}
+
+    .middle-section {flex-direction: column; align-items: center;}
+
+    .info-archivetype {border: 1px var(--destaque-color) solid; border-radius: 20px;}
+
+    .adverseting img {width: 100%;}
+
+    footer {display: none;}
+    
+}
